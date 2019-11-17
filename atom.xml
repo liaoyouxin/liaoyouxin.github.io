@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="https://www.w3.org/2005/Atom">
+  <title>小新blogs</title>
+  
+  <subtitle>逆水行舟，不进则退</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-11-17T12:04:43.034Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Youxin Liao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo配置</title>
+    <link href="http://yoursite.com/2019/11/17/hexo%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/11/17/hexo%E9%85%8D%E7%BD%AE/</id>
+    <published>2019-11-17T08:44:24.000Z</published>
+    <updated>2019-11-17T12:04:43.034Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直想搭建一个自己的博客，但现在才弄起来。不想自己买服务器和域名(主要是没钱::&gt;_&lt;::),由于常用node和git所以选择了hexo框架搭建。<br>hexo功能比较全面，可用主题也比较多，通过npm安装后即可配置使用，操作比较简单。下面就是主要操作流程:</p><h2 id="搭建hexo运行环境"><a href="#搭建hexo运行环境" class="headerlink" title="搭建hexo运行环境"></a>搭建hexo运行环境</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>+Windows：下载并安装 git.<br>+Mac：使用 Homebrew, MacPorts 或者下载 安装程序。<br>+Linux (Ubuntu, Debian)：<code>sudo apt-get install git-core</code><br>+Linux (Fedora, Red Hat, CentOS)：<code>sudo yum install git-core</code></p><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>+Windows：通过 nvs（推荐）或者nvm 安装。<br>+Mac：使用 Homebrew 或 MacPorts 安装。<br>+Linux（DEB/RPM-based）：从 NodeSource 安装。<br>+其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 指导</p><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><pre><code class="bash">$ npm install -g hexo-cli</code></pre><h3 id="进阶和安装使用"><a href="#进阶和安装使用" class="headerlink" title="进阶和安装使用"></a>进阶和安装使用</h3><p>对于熟悉 npm 的进阶用户，可以仅局部安装 hexo 包。</p><pre><code class="javascript">$ npm install hexo</code></pre><h2 id="配置及初始化"><a href="#配置及初始化" class="headerlink" title="配置及初始化"></a>配置及初始化</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><pre><code class="bash">$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install</code></pre><p>新建完成后，指定文件夹的目录如下：</p><pre><code class="bash">.├── _config.yml├── package.json├── scaffolds├── source|   ├── _drafts|   └── _posts└── themes</code></pre><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>找到根目录下的_config.yml文件，您可以在此配置网站大部分的参数,主要配置如下图:<br><img src="/img/hexo-set/1.png" srcset="undefined" alt="主要配置如图"></p><h2 id="生成静态文件及本地运行"><a href="#生成静态文件及本地运行" class="headerlink" title="生成静态文件及本地运行"></a>生成静态文件及本地运行</h2><p>本地初始化后会生成一个hello-world模版，可直接使用看下效果:</p><pre><code class="bash">$ hexo generate / hexo g</code></pre><p>生成静态文件指令</p><pre><code class="bash">$ hexo server / hexo s</code></pre><p>运行到本地，默认是4000端口</p><p>运行界面如图：<br><img src="/img/hexo-set/2.png" srcset="undefined" alt=""></p><h2 id="新建一篇文章"><a href="#新建一篇文章" class="headerlink" title="新建一篇文章"></a>新建一篇文章</h2><pre><code class="bash">$ hexo new 文章名</code></pre><p>然后到根目录下的source文件夹下的_posts中找到你新建的文章的md文件进行编辑</p><h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p>hexo有很多主题模版，<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题链接</a><br>我目前使用的是Fluid的模版，效果如下:<br><img src="/img/hexo-set/3.png" srcset="undefined" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一直想搭建一个自己的博客，但现在才弄起来。不想自己买服务器和域名(主要是没钱::&amp;gt;_&amp;lt;::),由于常用node和git所以选择了hexo框架搭建。&lt;br&gt;hexo功能比较全面，可用主题也比较多，通过npm安装后即可配置使用，操作比较简单。下面就是主要操作流程:&lt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/11/17/hello-world/"/>
+    <id>http://yoursite.com/2019/11/17/hello-world/</id>
+    <published>2019-11-17T06:49:44.470Z</published>
+    <updated>2019-11-17T11:17:00.359Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
